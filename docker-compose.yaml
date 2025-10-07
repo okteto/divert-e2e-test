@@ -1,0 +1,28 @@
+services:
+  servicea:
+    build:
+      context: servicea
+    ports:
+      - 8080:8080
+    resources:
+      requests:
+        cpu: "20m"
+        memory: "100Mi"
+  serviceb:
+    build:
+      context: serviceb
+    ports:
+      - 8080:8080
+    resources:
+      requests:
+        cpu: "20m"
+        memory: "100Mi"
+  servicec:
+    build:
+      context: servicec
+    ports:
+      - 8080
+    resources:
+      requests:
+        cpu: "20m"
+        memory: "100Mi"

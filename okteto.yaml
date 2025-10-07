@@ -1,0 +1,15 @@
+deploy:
+  compose: docker-compose.yaml
+dev:
+  servicea:
+    command: bash
+    sync:
+    - serviceA:/usr/src/app
+  serviceb:
+    command: bash
+    sync:
+    - serviceB:/usr/src/app
+  servicec:
+    command: bash
+    sync:
+    - serviceC:/usr/src/app
